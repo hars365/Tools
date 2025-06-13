@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions | LocalToolsPro</title>
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3f37c9;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --text-color: #333;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7ff;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .terms-container {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 40px;
+            box-shadow: var(--box-shadow);
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin: 30px 0 15px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin: 25px 0 10px;
+            font-size: 1.4rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background-color: rgba(67, 97, 238, 0.1);
+            padding: 15px;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            margin: 20px 0;
+        }
+
+        .back-to-home {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: var(--border-radius);
+            margin-top: 20px;
+            transition: var(--transition);
+        }
+
+        .back-to-home:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #666;
+            font-size: 0.9rem;
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .terms-container {
+                padding: 25px;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            h3 {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Table styling for pricing/plans if needed */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: var(--box-shadow);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: rgba(67, 97, 238, 0.1);
+        }
+
+        /* Accordion for mobile */
+        .accordion {
+            margin: 20px 0;
+        }
+
+        .accordion-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion-content {
+            padding: 15px;
+            background-color: white;
+            border-radius: 0 0 var(--border-radius) var(--border-radius);
+            box-shadow: var(--box-shadow);
+            display: none;
+        }
+
+        .accordion.active .accordion-content {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .section-desktop {
+                display: none;
+            }
+            
+            .section-mobile {
+                display: block;
+            }
+        }
+
+        @media (min-width: 601px) {
+            .section-mobile {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Terms & Conditions</h1>
+            <p class="subtitle">Last updated: June 15, 2023</p>
+        </header>
+
+        <div class="terms-container">
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing and using LocalToolsPro ("the Website"), you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to these terms, please do not use our services.</p>
+
+            <div class="highlight">
+                <p><strong>Important:</strong> Our tools process your files locally in your browser. Your documents never leave your computer, ensuring maximum privacy and security.</p>
+            </div>
+
+            <h2>2. Description of Service</h2>
+            <p>LocalToolsPro provides various online tools for processing images and PDF documents, including but not limited to:</p>
+            <ul>
+                <h2>2. Description of Service</h2>
+<p>LocalToolsPro provides various online tools for processing images and PDF documents, including but not limited to:</p>
+<a href="/Ing-compress.html class="tool-card" style="text-decoration: none; color: inherit;">
+<ul>
+    <li><a href="/image-compressor" style="color: var(--primary-color); text-decoration: none; border-bottom: 1px dashed var(--primary-color);">Image compression and optimization</a></li>
+    <li><a href="/pdf-tools" style="color: var(--primary-color); text-decoration: none; border-bottom: 1px dashed var(--primary-color);">PDF merging, splitting, and conversion</a></li>
+    <li><a href="/document-converter" style="color: var(--primary-color); text-decoration: none; border-bottom: 1px dashed var(--primary-color);">Document format conversion</a></li>
+    <li><a href="/file-reducer" style="color: var(--primary-color); text-decoration: none; border-bottom: 1px dashed var(--primary-color);">File size reduction tools</a></li>
+</ul>
+            </ul>
+
+            <h2>3. User Responsibilities</h2>
+            <h3>3.1 Proper Use</h3>
+            <p>You agree to use the Website only for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of the Website.</p>
+
+            <h3>3.2 Prohibited Content</h3>
+            <p>You must not use our tools to process content that:</p>
+            <ul>
+                <li>Violates any laws or regulations</li>
+                <li>Infringes on intellectual property rights</li>
+                <li>Contains viruses or malicious software</li>
+                <li>Is pornographic, obscene, or offensive</li>
+            </ul>
+
+            <h2>4. Privacy Policy</h2>
+            <p>Our tools process your files entirely in your browser. We do not:</p>
+            <ul>
+                <li>Upload your files to our servers</li>
+                <li>Store your files after processing</li>
+                <li>Track the content of your files</li>
+            </ul>
+            <p>We may collect anonymous usage statistics to improve our services. For more information, please see our <a href="/privacy-policy" style="color: var(--primary-color);">Privacy Policy</a>.</p>
+
+            <h2>5. Intellectual Property</h2>
+            <p>All tools and software on this Website are the property of LocalToolsPro or its licensors. You may not:</p>
+            <ul>
+                <li>Reverse engineer or decompile any tools</li>
+                <li>Use our tools to create a competing service</li>
+                <li>Reproduce or redistribute our tools without permission</li>
+            </ul>
+
+            <h2>6. Limitation of Liability</h2>
+            <p>LocalToolsPro will not be liable for any:</p>
+            <ul>
+                <li>Loss or corruption of data resulting from use of our tools</li>
+                <li>Interruption or cessation of service</li>
+                <li>Bugs or errors in the tools</li>
+                <li>Unauthorized access to your computer (as files stay local)</li>
+            </ul>
+
+            <h2>7. Changes to Terms</h2>
+            <p>We reserve the right to modify these terms at any time. Your continued use of the Website after such changes constitutes your acceptance of the new terms.</p>
+
+            <h2>8. Governing Law</h2>
+            <p>These terms shall be governed by and construed in accordance with the laws of [Your Country/State], without regard to its conflict of law provisions.</p>
+
+            <h2>9. Contact Information</h2>
+            <p>If you have any questions about these Terms, please contact us at:</p>
+            <p>Email: <a href="mailto:contact@localtoolspro.com" style="color: var(--primary-color);">contact@localtoolspro.com</a></p>
+
+            <a href="/" class="back-to-home">Back to Home</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 LocalToolsPro. All rights reserved.</p>
+        <p>Your local solution for image and PDF processing tools.</p>
+    </footer>
+
+    <script>
+        // Accordion functionality for mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordions = document.querySelectorAll('.accordion-header');
+            
+            accordions.forEach(accordion => {
+                accordion.addEventListener('click', function() {
+                    this.parentElement.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
